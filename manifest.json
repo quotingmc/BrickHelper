@@ -1,0 +1,32 @@
+{
+
+  "manifest_version": 2,
+  "name": "BL Browser",
+  "version": "1.0",
+
+  "description": "BrickLink Helper for Web Browsers",
+  
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+
+  "permissions": ["activeTab"],
+
+  "web_accessible_resources": [
+    "icons/*.png"],
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"},
+    "default_title": "Enable Overlay",
+    "show_matches": ["https://*.ebay.co.uk/*"]
+  }
+}
